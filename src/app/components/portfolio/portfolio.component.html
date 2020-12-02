@@ -1,0 +1,101 @@
+<header>
+    <h1>PORTAFOLIO</h1>
+    <p> Estos son algunos de los proyectos que he realizado personalmente.</p>
+</header>
+<main>
+
+    <section class="grid-1">
+
+        <div  class="item-1" *ngFor="let item of items">
+            <div class="mag" (click)="openLink(item.link)">
+                <img draggable="false" class="square" src="{{item.url}}" alt="">
+            </div>
+            <div></div>
+            <div class="txt-container" (click)="openLink(item.link)">
+                <h1 class="title"><br>{{ item.title }}</h1>
+            </div>
+            <div>
+                <h3 (click)="openLink(item.link)" class="desc">{{item.desc}}</h3>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="sect-2">
+        <h1 class="contact">SOBRE MI</h1>
+        <br>
+        <div class="content-profile">
+
+            <div class="about-me">
+                <strong>Erick Alvarez, Android Developer.</strong>
+                <br>
+                <br>
+                <p>
+                    Mi ilusión es crecer como profesional dentro de la industria del desarrollo del software.
+                    <br>
+                    Personalmente me he enfocado en desarrollo Android y aunque cuento también con conocimientos en
+                    otras ramas del desarrollo, lo que más me apasioná es el mundo Android y crear aplicaciones para uno
+                    de los sistemas operativos más usados del mundo.
+
+                </p>
+            </div>
+
+            <div class="about-me">
+                <strong style="font-size: 18px;" >CONOCIMIENTOS</strong>
+                <br>
+                <ul>
+                    <li>Kotlin</li>
+                    <li>RxJava, RxAndroid and RxJavaRoom</li>
+                    <li>Firebase <br> 
+                        &nbsp;&nbsp; - Firestore <br>
+                        &nbsp;&nbsp; - Push Notificaciones<br>
+                        &nbsp;&nbsp; - Firebase-ads <br>
+                        &nbsp;&nbsp; - Crashlytics 
+                    </li>
+                    <li>Branch - DeepLinks</li>
+                    <li>Dagger2</li>
+                    <li>MVP</li>
+                </ul>
+
+
+            </div>
+
+            <div class="about-me">
+                <strong style="font-size: 18px;" >CORREO</strong>
+                <br>
+                <br>
+                 <h1 class="email">erick.alvz.1.9.9.3@gmail.com</h1>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="sect-2">
+        <h1 class="contact">ENCUENTRAME EN</h1>
+        <br>
+        <div class="content-g">
+            <div class="content-links">
+                <img draggable="false" (click)="openLink('https://github.com/EKRLAZ')" src="../../../assets/github.png" width="50" height="50" />
+            </div>
+            <div>
+                <img draggable="false" (click)="openLink('https://twitter.com/ekrlaz')" src="../../../assets/twitter_2.png" width="200" height="40.1" />
+            </div>
+            <div>
+                <img draggable="false" (click)="openLink('https://www.linkedin.com/in/erick-rafael-alvarez-arrieta-707a5a1a2/')" src="../../../assets/Linkedin.png" width="137.1" height="77.1" />
+            </div>
+            <div>
+                <img draggable="false" (click)="openLink('https://stackoverflow.com/users/11933015/ekrlaz')" src="../../../assets/stackoverflow.png" width="256" height="50.2" />
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+
+</main>
+
+
+<div class="foot">
+    <h3 draggable="false" class="footer-text">© 218-2020 ERICK ALVAREZ. BUILDING ANDROID APPS WITH ♥ FROM MEXICO TO THE WORLD.</h3>
+</div>
