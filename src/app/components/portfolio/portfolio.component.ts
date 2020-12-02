@@ -20,22 +20,22 @@ export class PortfolioComponent implements OnInit {
   
     this.items = [{
       'title': 'Spooky'.toUpperCase(),
-      'url': './../../assets/sppokypage.png',
+      'url': 'https://i.imgur.com/YxRTgCH.png',
       'desc': 'Historias de terror, Podcasts y Musica'.toUpperCase(),
       'link': 'https://play.google.com/store/apps/details?id=io.spooky.app'
     },{
       'title': 'Spooky - AdminPage'.toUpperCase(),
-      'url': './../../assets/sppokypagenode.png',
+      'url': 'https://i.imgur.com/QUWMSbJ.png',
       'desc': 'Administrador Back-End & Front-End'.toUpperCase(),
       'link': 'https://github.com/EKRLAZ/spooky-admin'
     },{
       'title': 'RadioCreepy'.toUpperCase(),
-      'url': './../../assets/radiocreepypage.png',
+      'url': 'https://i.imgur.com/4uhTCT1.png',
       'desc': ' Escucha historias narradas por los mejores youtubers de terror '.toUpperCase(),
       'link': 'https://radio-creepy.web.app'
     },{
       'title': 'Creepypastas Reader'.toUpperCase(),
-      'url': './../../assets/creepypasta.png',
+      'url': 'https://i.imgur.com/WB1rvzZ.png',
       'desc': ' ** En desarrollo ** - Lee más de 14 mil historias, las populares de internet. '.toUpperCase(),
       'link': 'https://play.google.com/store/apps/details?id=xx.xxx.xx'
     }]
